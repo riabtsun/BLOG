@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from 'express';
 import mongoose from 'mongoose';
 import { loginValidation, postCreateValidation, registerValidation } from './validations/validations.js';
-import checkAuth from './utils/checkAuth.js';
+import checkAuth, { CustomRequest } from './utils/checkAuth.js';
 import * as UserController from './controllers/UserController.js';
 import * as PostController from './controllers/PostController.js';
 

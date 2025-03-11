@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { validationResult } from 'express-validator';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import UserModel, { IUser } from '../models/User.js';
+import UserModel, { IUser, IUserDocument } from '../models/User.js';
 import { UserType } from '../types.js';
 import { CustomRequest } from '../utils/checkAuth.js';
 
@@ -25,11 +25,11 @@ export const register = async (req: Request, res: Response): Promise<void> => {
       avatarUrl: req.body.avatarUrl,
     });
 
-    const user: UserType = await doc.save();
+    const user: IUserDocument = await doc.save();
 
     const token = jwt.sign({ _id: user._id }, 'secret123', { expiresIn: '30d' });
 
-    const { passwordHash, ...userData } = user._doc ?? {};
+    const { passwordHash, ...userData } = (user._doc as IUserDocument) ?? {};
 
     res.json({ ...userData, token });
   } catch (err) {
@@ -40,7 +40,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
 
 export const login = async (req: Request, res: Response): Promise<void> => {
   try {
-    const user: UserType = await UserModel.findOne({ email: req.body.email }).orFail();
+    const user: IUserDocument = await UserModel.findOne({ email: req.body.email }).orFail();
     if (!user) {
       res.status(404).json({ message: 'User not found' });
     }
@@ -53,7 +53,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       });
     }
     const token = jwt.sign({ _id: user._id }, 'secret123', { expiresIn: '30d' });
-    const { passwordHash, ...userData } = user._doc ?? {};
+    const { passwordHash, ...userData } = (user._doc as IUserDocument) ?? {};
 
     res.json({ ...userData, token });
   } catch (err) {
@@ -62,14 +62,14 @@ export const login = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
-export const getMe = async (req: Request, res: Response): Promise<void> => {
+export const getMe = async (req: CustomRequest, res: Response): Promise<void> => {
   try {
-    const user: UserType = await UserModel.findById((req as CustomRequest).userId).orFail();
+    const user: IUserDocument = await UserModel.findById(req.userId).orFail();
     if (!user) {
       res.status(404).json({ message: 'User not found' });
     }
 
-    const { passwordHash, ...userData } = user._doc ?? {};
+    const { passwordHash, ...userData } = (user._doc as IUserDocument) ?? {};
     res.json(userData);
   } catch (err) {
     console.log(err);

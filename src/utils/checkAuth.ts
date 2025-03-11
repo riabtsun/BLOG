@@ -1,9 +1,9 @@
-import jwt, { JwtPayload } from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import { NextFunction, Request, Response } from 'express';
 import mongoose from 'mongoose';
 
 export interface CustomRequest extends Request {
-  userId: mongoose.Types.ObjectId;
+  userId?: mongoose.Types.ObjectId;
 }
 
 export default (req: Request, res: Response, next: NextFunction) => {

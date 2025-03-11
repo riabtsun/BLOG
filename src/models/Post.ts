@@ -1,6 +1,15 @@
-import mongoose from 'mongoose';
+import mongoose, { Document, Schema, Model } from 'mongoose';
 
-const PostSchema = new mongoose.Schema(
+export interface IPostDocument extends Document {
+  fullName: string;
+  text: string;
+  tags: string[];
+  viewsCount: number;
+  user: string;
+  imageUrl: string;
+}
+
+const PostSchema: Schema<IPostDocument> = new Schema(
   {
     fullName: { type: String, required: true },
     text: { type: String, required: true, unique: true },
@@ -12,4 +21,5 @@ const PostSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-export default mongoose.model('Post', PostSchema);
+const PostModel: Model<IPostDocument> = mongoose.model('Post', PostSchema);
+export default PostModel;
