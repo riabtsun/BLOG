@@ -8,6 +8,7 @@ export interface CustomRequest extends Request {
 
 export default (req: Request, res: Response, next: NextFunction) => {
   const token = (req.headers.authorization || '').replace(/Bearer\s?/, '');
+  // res.send(token);
   if (token) {
     try {
       const decoded = jwt.verify(token, 'secret123');

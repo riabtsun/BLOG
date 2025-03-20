@@ -3,7 +3,6 @@ import { validationResult } from 'express-validator';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import UserModel, { IUser, IUserDocument } from '../models/User.js';
-import { UserType } from '../types.js';
 import { CustomRequest } from '../utils/checkAuth.js';
 
 export const register = async (req: Request, res: Response): Promise<void> => {
