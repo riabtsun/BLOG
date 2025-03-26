@@ -28,7 +28,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
 
     const token = jwt.sign({ _id: user._id }, 'secret123', { expiresIn: '30d' });
 
-    const { passwordHash, ...userData } = (user._doc as IUserDocument) ?? {};
+    const { passwordHash, ...userData } = user._doc ?? {};
 
     res.json({ ...userData, token });
   } catch (err) {
@@ -52,7 +52,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       });
     }
     const token = jwt.sign({ _id: user._id }, 'secret123', { expiresIn: '30d' });
-    const { passwordHash, ...userData } = (user._doc as IUserDocument) ?? {};
+    const { passwordHash, ...userData } = user._doc  ?? {};
 
     res.json({ ...userData, token });
   } catch (err) {
@@ -67,8 +67,7 @@ export const getMe = async (req: CustomRequest, res: Response): Promise<void> =>
     if (!user) {
       res.status(404).json({ message: 'User not found' });
     }
-
-    const { passwordHash, ...userData } = (user._doc as IUserDocument) ?? {};
+    const { passwordHash, ...userData } = user._doc  ?? {};
     res.json(userData);
   } catch (err) {
     console.log(err);

@@ -12,7 +12,7 @@ export interface IPostDocument extends Document {
   text: string;
   tags: string[];
   viewsCount: number;
-  user: IPostUser;
+  user: IPostUser[];
   imageUrl: string;
 }
 

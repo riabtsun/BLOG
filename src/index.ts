@@ -29,6 +29,8 @@ app.get('/auth/me', checkAuth, UserController.getMe);
 
 app.post('/posts', checkAuth, postCreateValidation, PostController.create);
 
+app.get('/posts', PostController.getAll);
+
 app.listen(4444, (err): void => {
   if (err) {
     return console.log(`Server error ${err}`);

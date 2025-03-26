@@ -2,13 +2,17 @@ import PostModel from '../models/Post.js';
 import mongoose from 'mongoose';
 import { Response, Request } from 'express';
 
-interface IPost {
-  title: string;
-  text: string;
-  imageUrl: string;
-  tags: string[];
-  userId: string;
-}
+export const getAll = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const posts = await PostModel.find().populate({ path: 'user' }).exec();
+    res.json(posts);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({
+      message: 'Failed get posts',
+    });
+  }
+};
 
 interface CustomRequest extends Request {
   userId?: mongoose.Types.ObjectId;

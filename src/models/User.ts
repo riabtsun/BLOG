@@ -8,7 +8,7 @@ export interface IUser {
 }
 
 export interface IUserDocument extends IUser, Document {
-  _doc: {};
+  _doc: IUser;
 }
 
 const UserSchema: Schema<IUserDocument> = new Schema(
