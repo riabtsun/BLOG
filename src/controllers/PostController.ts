@@ -25,7 +25,7 @@ export const create = async (req: CustomRequest, res: Response): Promise<void> =
       text: req.body.text,
       imageUrl: req.body.imageUrl,
       tags: req.body.tags,
-      userId: req.userId,
+      user: req.userId,
     });
     const post = await doc.save();
     res.json(post);

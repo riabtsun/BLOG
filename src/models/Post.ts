@@ -12,7 +12,7 @@ export interface IPostDocument extends Document {
   text: string;
   tags: string[];
   viewsCount: number;
-  user: IPostUser[];
+  user: IPostUser;
   imageUrl: string;
 }
 
@@ -22,7 +22,7 @@ const PostSchema: Schema<IPostDocument> = new Schema(
     text: { type: String, required: true, unique: false },
     tags: { type: [String], default: [] },
     viewsCount: { type: Number, default: 0 },
-    user: [{ type: Schema.Types.ObjectId, ref: 'User', required: true, unique: false }],
+    user: { type: Schema.Types.ObjectId, ref: 'User', required: true, unique: false },
     imageUrl: String,
   },
   { timestamps: true },
