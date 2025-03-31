@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-import { validationResult } from 'express-validator';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import UserModel, { IUser, IUserDocument } from '../models/User.js';
@@ -7,12 +6,6 @@ import { CustomRequest } from '../utils/checkAuth.js';
 
 export const register = async (req: Request, res: Response): Promise<void> => {
   try {
-    const errors = validationResult(req);
-
-    if (!errors.isEmpty()) {
-      res.status(400).json(errors.array());
-    }
-
     const password: string = req.body.password;
     const salt = await bcrypt.genSalt(10);
     const hash = await bcrypt.hash(password, salt);
@@ -28,7 +21,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
 
     const token = jwt.sign({ _id: user._id }, 'secret123', { expiresIn: '30d' });
 
-    const { passwordHash, ...userData } = user._doc ?? {};
+    const { ...userData } = user._doc ?? {};
 
     res.json({ ...userData, token });
   } catch (err) {
@@ -52,7 +45,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       });
     }
     const token = jwt.sign({ _id: user._id }, 'secret123', { expiresIn: '30d' });
-    const { passwordHash, ...userData } = user._doc ?? {};
+    const { ...userData } = user._doc ?? {};
 
     res.json({ ...userData, token });
   } catch (err) {
@@ -67,7 +60,7 @@ export const getMe = async (req: CustomRequest, res: Response): Promise<void> =>
     if (!user) {
       res.status(404).json({ message: 'User not found' });
     }
-    const { passwordHash, ...userData } = user._doc  ?? {};
+    const { ...userData } = user._doc ?? {};
     res.json(userData);
   } catch (err) {
     console.log(err);
