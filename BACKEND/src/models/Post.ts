@@ -10,6 +10,7 @@ interface IPostUser extends Document {
 export interface IPostDocument extends Document {
   fullName: string;
   text: string;
+  // title: string;
   tags: string[];
   viewsCount: number;
   user: IPostUser;
@@ -21,6 +22,7 @@ const PostSchema: Schema<IPostDocument> = new Schema(
     fullName: { type: String },
     text: { type: String, required: true, unique: false },
     tags: { type: [String], default: [] },
+    // title: { type: String, required: true, unique: false },
     viewsCount: { type: Number, default: 0 },
     user: { type: Schema.Types.ObjectId, ref: 'User', required: true, unique: false },
     imageUrl: String,

@@ -15,6 +15,6 @@ export const loginValidation: ValidationChain[] = [
 export const postCreateValidation: ValidationChain[] = [
   body('title', 'Title must be at least 3 symbols').isLength({ min: 3 }).isString(),
   body('text', 'Text must be at least 3 symbols').isLength({ min: 3 }).isString(),
-  body('tags', 'Incorrect tags').optional().isString(),
+  body('tags', 'Incorrect tags format').optional().isArray(),
   body('imageUrl', 'Incorrect image url').optional().isURL(),
 ];

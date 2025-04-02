@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f8b4503-c63b-41e8-9838-3da0011f757d" name="Changes" comment="refactored commits">
+      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/public/noavatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/src/axios.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/src/components/SideBlock/SideBlock.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/src/redux/slices/posts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FRONTEND/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/controllers/PostController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/controllers/PostController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/models/Post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/models/Post.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/validations/validations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/validations/validations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/components/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/components/Post/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/components/Post/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/pages/FullPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/pages/FullPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/pages/Home.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;riabtsun&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/riabtsun/BLOG.git&quot;,
+    &quot;accountId&quot;: &quot;9cc0ed41-9dbf-4c25-8f45-cfcc3f659d61&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2tqa4SCfjSHDw8N4icOmc1e5G3X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dryabtsun/Documents/MERN/BLOG/FRONTEND/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Program Files\\nodejs\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\dryabtsun\\Documents\\MERN\\BLOG\\FRONTEND\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dryabtsun\Documents\MERN\BLOG\FRONTEND\public" />
+      <recent name="C:\Users\dryabtsun\Documents\MERN\BLOG\BACKEND" />
+      <recent name="C:\Users\dryabtsun\Documents\MERN\BLOG" />
+      <recent name="C:\Users\dryabtsun\Documents\MERN\BLOG\FRONTEND" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dryabtsun\Documents\MERN\BLOG\src\utils" />
+      <recent name="C:\Users\dryabtsun\Documents\MERN\BLOG\src" />
+      <recent name="C:\Users\dryabtsun\Documents\MERN\BLOG" />
+      <recent name="C:\Users\dryabtsun\Documents\MERN\BLOG\backend" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.120" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f8b4503-c63b-41e8-9838-3da0011f757d" name="Changes" comment="" />
+      <created>1741081868436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741081868436</updated>
+      <workItem from="1741081871153" duration="81485000" />
+      <workItem from="1741680601418" duration="23742000" />
+      <workItem from="1742212820742" duration="13286000" />
+      <workItem from="1742466927466" duration="48000" />
+      <workItem from="1742466996140" duration="32487000" />
+      <workItem from="1742976792718" duration="13956000" />
+      <workItem from="1742997048480" duration="6188000" />
+      <workItem from="1743060329263" duration="50000" />
+      <workItem from="1743060394897" duration="6279000" />
+      <workItem from="1743070180319" duration="7917000" />
+      <workItem from="1743082659992" duration="2316000" />
+      <workItem from="1743090971866" duration="1498000" />
+      <workItem from="1743401324950" duration="25000" />
+      <workItem from="1743401387809" duration="6469000" />
+      <workItem from="1743419679494" duration="11359000" />
+      <workItem from="1743487478591" duration="19688000" />
+      <workItem from="1743580064727" duration="13621000" />
+    </task>
+    <task id="LOCAL-00001" summary="refactored some code">
+      <option name="closed" value="true" />
+      <created>1741689661868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741689661868</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactored some code">
+      <option name="closed" value="true" />
+      <created>1742979209760</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742979209760</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed bug in Post schema">
+      <option name="closed" value="true" />
+      <created>1743002234727</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743002234727</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fe">
+      <option name="closed" value="true" />
+      <created>1743091088668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743091088668</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactored commits">
+      <option name="closed" value="true" />
+      <created>1743403948957</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743403948957</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactored some code" />
+    <MESSAGE value="fixed bug in Post schema" />
+    <MESSAGE value="fe" />
+    <MESSAGE value="refactored commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored commits" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/FRONTEND/src/pages/FullPost.tsx</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
