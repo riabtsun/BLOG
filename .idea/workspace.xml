@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f8b4503-c63b-41e8-9838-3da0011f757d" name="Changes" comment="refactored commits">
-      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BACKEND/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FRONTEND/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FRONTEND/public/noavatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FRONTEND/src/axios.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FRONTEND/src/components/SideBlock/SideBlock.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FRONTEND/src/redux/slices/posts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FRONTEND/src/redux/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKEND/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKEND/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKEND/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKEND/src/controllers/PostController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/controllers/PostController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKEND/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKEND/src/models/Post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/models/Post.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKEND/src/validations/validations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/validations/validations.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FRONTEND/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FRONTEND/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/components/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FRONTEND/src/components/Post/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/components/Post/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FRONTEND/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FRONTEND/src/pages/FullPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/pages/FullPost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FRONTEND/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/pages/Home.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="4f8b4503-c63b-41e8-9838-3da0011f757d" name="Changes" comment="added routes in backend" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -152,7 +126,10 @@
       <workItem from="1743401387809" duration="6469000" />
       <workItem from="1743419679494" duration="11359000" />
       <workItem from="1743487478591" duration="19688000" />
-      <workItem from="1743580064727" duration="13621000" />
+      <workItem from="1743580064727" duration="16093000" />
+      <workItem from="1744030493728" duration="157000" />
+      <workItem from="1744033478063" duration="625000" />
+      <workItem from="1744091980209" duration="4813000" />
     </task>
     <task id="LOCAL-00001" summary="refactored some code">
       <option name="closed" value="true" />
@@ -194,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743403948957</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added routes in backend">
+      <option name="closed" value="true" />
+      <created>1744096955413</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744096955413</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added routes in backend">
+      <option name="closed" value="true" />
+      <created>1744097034768</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744097034768</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,18 +209,7 @@
     <MESSAGE value="fixed bug in Post schema" />
     <MESSAGE value="fe" />
     <MESSAGE value="refactored commits" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored commits" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/FRONTEND/src/pages/FullPost.tsx</url>
-          <line>24</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added routes in backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="added routes in backend" />
   </component>
 </project>
