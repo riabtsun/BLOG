@@ -95,6 +95,7 @@ export const getLastTags = async (_req: Request, res: Response): Promise<void> =
       .flat()
       .slice(0, 5);
     res.json(tags);
+    return;
   } catch (err) {
     console.log(err);
     res.status(500).json({

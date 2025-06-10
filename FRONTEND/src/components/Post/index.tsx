@@ -12,17 +12,18 @@ import { PostSkeleton } from './Skeleton';
 import { ReactNode } from 'react';
 
 export interface IPostProps {
-  _id: number;
-  title: string;
-  createdAt: string;
+  _id?: number;
+  title?: string;
+  createdAt?: string;
   imageUrl?: string;
-  user: {
+  user?: {
     fullName: string;
     avatarUrl: string;
   };
-  viewsCount: number;
-  commentsCount: number;
-  tags: string[];
+  viewsCount?: number;
+  commentsCount?: number;
+  tags?: string[];
+  text?: string;
   children?: ReactNode;
   isFullPost?: boolean;
   isLoading?: boolean;
@@ -73,7 +74,7 @@ export const Post = ({
             {isFullPost ? title : <Link to={`/posts/${_id}`}>{title}</Link>}
           </h2>
           <ul className={styles.tags}>
-            {tags.map((name) => (
+            {tags?.map((name) => (
               <li key={name}>
                 <Link to={`/tag/${name}`}>#{name}</Link>
               </li>

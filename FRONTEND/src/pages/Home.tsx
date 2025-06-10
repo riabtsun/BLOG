@@ -53,16 +53,17 @@ export const Home = () => {
         <Tab label="Новые" />
         <Tab label="Популярные" />
       </Tabs>
+
       <Grid container spacing={4}>
         <Grid xs={8} item>
-          {(isPostsLoading ? [...Array(5)] : posts.items).map((post: IPostProps) =>
+          {(isPostsLoading ? [...Array(5)] : posts.items).map((post: IPostProps, index) =>
             isPostsLoading ? (
-              <p>Loading</p>
+              <Post isLoading={true} key={index} />
             ) : (
               <Post
                 _id={post._id}
                 title={post.title}
-                imageUrl="https://i.postimg.cc/hvDLT9b9/https-dev-to-uploads-s3-amazonaws-com-uploads-articles-icohm5g0axh9wjmu4oc3.png"
+                imageUrl={post.imageUrl}
                 user={post.user}
                 createdAt={post.createdAt}
                 viewsCount={post.viewsCount}

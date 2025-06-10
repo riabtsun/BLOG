@@ -14,7 +14,11 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <CssBaseline />
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter
+        future={{
+          v7_relativeSplatPath: true,
+        }}
+      >
         <Provider store={store}>
           <App />
         </Provider>

@@ -11,17 +11,15 @@ export const fetchTags = createAsyncThunk('posts/fetchTags', async () => {
   return data;
 });
 
-type StatusType = 'loading' | 'loaded' | 'error';
+interface LoadingState<T> {
+  items: T[];
+  status: 'loading' | 'loaded' | 'error';
+}
+
 
 interface IPostState {
-  posts: {
-    items: string[];
-    status: StatusType;
-  };
-  tags: {
-    items: string[];
-    status: StatusType;
-  };
+  posts: LoadingState<string>
+  tags: LoadingState<string>
 }
 
 const initialState: IPostState = {
